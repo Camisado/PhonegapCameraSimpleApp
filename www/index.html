@@ -58,6 +58,10 @@
     <script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
+    <form action="https://touristmapserver.herokuapp.com/upload" enctype="multipart/form-data" method="post">
+        <input id="uploadInput" type="file" name="upload">
+        <input type="submit" value="Upload file" />
+    </form>
     <div class="row">
         <div class="large-6 column">
             <button onclick="capturePhoto();">Capture Photo</button>

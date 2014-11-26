@@ -10,12 +10,18 @@ function onDeviceReady() {
 
 function onPhotoDataSuccess(imageData) {
     var capturedImage = document.getElementById('capturedImage');
+    var uploadInput = document.getElementById('uploadInput');
     capturedImage.src = imageData;
+    uploadInput.value = imageData;
+    console.log(imageData);
 }
 
 function onPhotoURISuccess(imageURI) {
     var openedImage = document.getElementById('openedImage');
+    var uploadInput = document.getElementById('uploadInput');
     openedImage.src = imageURI;
+    uploadInput.value = imageURI;
+    console.log(imageURI);
 }
 
 function capturePhoto() {
